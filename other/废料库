@@ -1,0 +1,533 @@
+
+/*滑动选框菜单 css
+.mynav{
+  margin:0 auto;
+  margin-left: 20%;
+  z-index: 100;
+  width:800px;
+  padding-bottom: 0px;
+}
+.mynav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.mynav li:not(:last-child) {
+ 
+  margin-right: 20px;
+}
+
+.mynav a {
+  display: block;
+  font-size: 15px;
+  color:rgb(187, 205, 197);
+  text-decoration: none;
+  padding: 0px 15px 7px;
+}
+
+.target {
+  position: absolute;
+  border-bottom: 2px solid transparent;
+  z-index: -1;
+  -webkit-transform: translateX(-60px);
+  transform: translateX(-60px);
+}
+
+.mynav a,
+.target {
+  -webkit-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;}开始*/
+
+
+
+
+
+  <!--
+  铅白rgb(241, 238, 245)
+  松花色rgb(189, 229, 114)
+  艾绿rgb(163, 226, 195)
+  茶白rgb(245, 247, 244)
+  鱼肚白rgb(253, 238, 233)
+-->
+
+
+
+
+<!--扔掉的部分
+<hr>
+<div class="logo-lasttitle-div">
+  <img src="../img/页面图标/logo史迹昔日.png" alt="main article image" >
+</div>
+<hr>
+
+<div class="row">
+  <div class="medium-8 columns">
+    <p><img src="../img/南宋地图.jpg" alt="main article image"></p>
+    <p class="main-历史图鉴-big">蒙古崛起：十一世纪的东亚大陆谁与争锋？</p>
+  </div>
+  <div class="medium-4 columns">
+    <p><img src="../img/日本后三年之乱.jpg" alt="日本后三年之乱" ></p>
+    <p class="main-历史图鉴-sm">日本后三年之乱：封建最后的狂欢</p>
+    <p><img src="../img/罗马帝国油画.jpeg" alt="罗马帝国"></p>
+    <p class="main-历史图鉴-sm">大卫.安东尼：罗马帝国最后的荣耀</p>
+  </div>
+</div>
+
+<hr>
+<div class="logo-lasttitle-div">
+  <img src="../img/页面图标/史话图鉴.png" alt="main article image" >
+</div>
+<hr>
+
+
+<div class="row small-up-3 medium-up-4 large-up-5">
+
+  <div class="column">
+    <img src="../img/德莱士兰共和国.jpg" alt="image for article">
+    <p>德莱士兰战争爆发</p>
+  </div>
+
+  <div class="column">
+    <img src="../img/独联体成立.png" alt="image for article">
+    <p>独立国家联合体成立</p>
+  </div>
+
+  <div class="column">
+    <img src="../img/约翰列侬遇刺.webp" alt="image for article">
+    <p>约翰列侬遇刺</p>
+  </div>
+
+  <div class="column show-for-medium">
+    <img src="../img/运-10试飞成功.jpg" alt="image for article">
+    <p>运-10试飞成功</p>
+  </div>
+
+  <div class="column show-for-large">
+    <img src="../img/参合战役.jpg" alt="image for article">
+    <p>魏燕参合战役爆发</p>
+  </div>
+
+</div>
+
+<hr>
+
+<div class="row column">
+  <h4 style="margin: 0;" class="text-center" id="历史热榜">历史热榜</h4>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="large-8 columns" style="border-right: 1px solid #E3E5E8;">
+
+  <article>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p>
+          <a href="../html/article.html">
+          <img src="../img/东西德分开.jpg" alt="image for article" alt="article preview image">
+          </a>
+        </p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="../html/article.html">东西德合并</a></h5>
+        <p>
+          <span><i class="fi-torso"> 苏美之争 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> 1987/23/16 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 现代文明</i></span>
+        </p>
+        <p>德国，欧洲头号经济强国，在近代发动的两次世界大战曾给世界带来巨大的破坏和灾难，战后为了彻底消除德国的威胁，英法美苏四国对德国和柏林进行了分区占领，一个实力弱小的德国更符合欧洲的利益。</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="../img/二里头遗址.jpg" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="#">二里头文明最新发现</a></h5>
+        <p>
+          <span><i class="fi-torso"> 古老的遗址&nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> 2020/07/16 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 中国古代文明</i></span>
+        </p>
+        <p>在以往考古工作的基础上，最近几年，在中心区原先发现的主干道路网络、“九宫格”式布局、宫殿区和作坊区外有围墙的基础上，发现“井”字形道路延伸范围更大，道路两侧多有墙垣，新发现与原南北向道路平行的道路。</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="../img/古希腊石建筑.jpg" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="#">古代希腊人如何建造大型石制房屋？</a></h5>
+        <p>
+          <span><i class="fi-torso"> 古代建筑 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> BC/1600 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 古希腊文明</i></span>
+        </p>
+        <p>古希腊建筑是欧洲建筑的先河，古希腊建筑的结构属梁柱体系。后世许多流派的建筑师，都从古希腊建筑中得到借鉴。</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="../img/埃及金字塔.jpg" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="#">创造出璀璨文明的古埃及人哪去了</a></h5>
+        <p>
+          <span><i class="fi-torso"> 消失的文明 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> BC2400 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 古埃及文明</i></span>
+        </p>
+        <p>曾经建造起金字塔，在天文、艺术等领域有过杰出成就的古埃及人去哪儿了呢？如今生活在埃及土地上的人是他们的后裔吗？</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <p><img src="../img/李贺画像.jpg" alt="image for article" alt="article preview image"></p>
+      </div>
+      <div class="large-6 columns">
+        <h5><a href="#">唐代三李之“诗鬼”李贺是个什么样的人？</a></h5>
+        <p>
+          <span><i class="fi-torso"> 古代艺术家 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-calendar"> AC800 &nbsp;&nbsp;</i></span>
+          <span><i class="fi-comments"> 中国诗人</i></span>
+        </p>
+        <p>李贺是中唐的浪漫主义诗人，与李白、李商隐称为唐代三李。是中唐到晚唐诗风转变期的一个代表者。他所写的诗大多是慨叹生不逢时和内心苦闷，抒发对理想、抱负的追求;对当时藩镇割据、宦官专权和人民所受的残酷剥削都有所反映。</p>
+      </div>
+    </div>
+
+
+
+    <hr>
+
+    <ul class="pagination" role="navigation" aria-label="Pagination">
+      <li class="disabled">上一页 <span class="show-for-sr">page</span></li>
+      <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+      <li><a href="#" aria-label="Page 2">2</a></li>
+      <li><a href="#" aria-label="Page 3">3</a></li>
+      <li><a href="#" aria-label="Page 4">4</a></li>
+      <li><a href="#" aria-label="Next page">下一页 <span class="show-for-sr">page</span></a></li>
+    </ul>
+
+    </article>
+
+  </div>
+
+  <div class="large-4 columns">
+
+    <aside>
+
+
+
+      <br>
+
+      <div class="row column">
+        <p class="lead">最新文章</p>
+        <p><img src="../img/欧洲黑死病.jpg" alt="advertisement of ShamWow"></p>
+        <p>黑死病杀死了一半欧洲人</p>
+      </div>
+
+      <br>
+
+      <div class="row column">
+        <p class="lead">推荐文章</p>
+
+        <div class="media-object">
+          <div class="media-object-section">
+            <img class="thumbnail" src= "../img/汉末三战.jpg">
+          </div>
+         
+            <p>东汉末年三大战役是指三国时期发生的三个大规模著名战役，分别是官渡之战、赤壁之战和夷陵之战。</p>
+         
+        </div>
+
+        <div class="media-object">
+          <div class="media-object-section">
+            <img class="thumbnail" src= "../img/楚河汉界.jpg">
+          </div>
+            <p>那些年楚河汉界上发生的故事</p>
+          
+        </div>
+
+      </div>
+
+    </aside>
+
+  </div>
+</div>
+
+
+<hr>
+
+    <div class="row column text-center" id="瀚海剧院">
+      <h1>瀚海剧院</h1>
+      <p class="lead">路为纸，地成册。行作笔，心当墨。纪录无限，丈量天下。</p>
+
+    </div>
+
+
+    <hr>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <h4>大型人文历史纪录片《苏东坡》</h4>
+        <a href="https://www.bilibili.com/video/BV1tx411B7AE?from=search&seid=485628603298994611">
+          <img class="thumbnail" src="../img/苏东坡.jpg" herf="../">
+        </a>
+        <p>C本片以苏轼贬谪黄州四年的生活为线，观照其一生的心路历程，从文学、艺术、美食、情感等多维度，解读苏东坡生命感悟、精神嬗变和艺术升华的过程。同时，辅之以当今最新的苏东坡研究成果，再现一个最丰富、最接近本真的苏东坡形象。</p>
+      </div>
+      <div class="large-6 columns">
+        <h4>《紫禁城的秘密（2017）》</h4>
+        <a href="../html/瀚海影院1.html">
+        
+        <img class="thumbnail" src="../img/紫禁城的秘密.jpg">
+      </a>  
+        <p>中国的故宫紫禁城是传承数个世纪的文化瑰宝，这处世界最大的木建筑群也同样是古代工程技术的结晶，从材料运输到抗震结构，充分展现了古人的聪明才智，其宏大的规模和精细繁复的装饰也消耗了庞大的人力物力。</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row column">
+      <ul class="menu">
+        <li><a href="#">壹</a></li>
+        <li><a href="#">贰</a></li>
+        <li><a href="#">叁</a></li>
+        <li><a href="#">肆</a></li>
+      </ul>
+    </div>
+    -->
+
+
+
+      <div class='baiyechuang'>
+        <ul>
+          <li>
+            <div class="starpeople-imgdiv">
+              <img src="../img/毛主席与群众们.jpg">
+
+              <a href="../html/article汉末三战.html">
+                <div class="starpeople-mask">
+                  <p class="titile-t1">少年立志出乡关</p>
+                  <p class="titile-t2">从韶山冲到天安门</p>
+                  <div class="mine-introduct">
+                    <p class="titile-t3">1893年12月26日，偏僻的中国湖南省湘潭县韶山冲，一个殷实农家诞生了一个婴儿，当时并没有任何迹象表明，他将在未来改变中国、整个东方乃至世界的历史进程。
+                    </p>
+                  </div>
+
+                  <h3>毛泽东</h3>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="starpeople-imgdiv">
+              <img src="../img/苏轼.jpg">
+
+              <a href="../html/article汉末三战.html">
+                <div class="starpeople-mask">
+                  <p class="titile-t1">“唐宋八大家”之一</p>
+                  <p class="titile-t2">豪放派主要代表</p>
+                  <div class="mine-introduct">
+                    <p class="titile-t3">其于人，见善称之，如恐不及；见不善斥之，如恐不尽；见义勇于敢为，而不顾其害。用此数困于世，然终不以为恨。</p>
+                  </div>
+
+                  <h3>苏轼</h3>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="starpeople-imgdiv">
+              <img src="../img/高仙芝.jpg">
+
+              <a href="../html/article汉末三战.html">
+                <div class="starpeople-mask">
+                  <p class="titile-t1">右羽林大将军</p>
+                  <p class="titile-t2">智取小勃律</p>
+                  <div class="mine-introduct">
+                    <p class="titile-t3">中国这一位勇敢的将军，行军所经，惊险困难，比起欧洲名将，从汉尼拔，到拿破仑，到苏沃洛夫，他们之越阿尔卑斯山，真不知超过若干倍。</p>
+                  </div>
+
+                  <h3>高仙芝</h3>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="starpeople-imgdiv">
+              <img src="../img/矮子丕平.jpg">
+
+              <a href="../html/article汉末三战.html">
+                <div class="starpeople-mask">
+                  <p class="titile-t1">丕平献土</p>
+                  <p class="titile-t2">加洛林王朝的创建者</p>
+                  <div class="mine-introduct">
+                    <p class="titile-t3">将带领法兰克走上真正的帝国巅峰，他是神话和传奇，为真正掌权者的宫相丕平只差一步就可以从摄政摇身而为君王</p>
+                  </div>
+
+                  <h3>矮子丕平</h3>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="lastbyc">
+            <div class="starpeople-imgdiv">
+              <img width="width:1000px" src="../img/圣马丁.jpg">
+
+              <a href="../html/article汉末三战.html">
+                <div class="starpeople-mask">
+                  <p class="titile-t1">阿根廷国父</p>
+                  <p class="titile-t2">从帝国学院到义军领袖</p>
+                  <div class="mine-introduct">
+                    <p class="titile-t3">如果摇篮是祖国的话，圣马丁是阿根廷人，因为他降生在乌拉圭河畔；如果荣誉是祖国的话，圣马丁是智利人，因为在迈普平原上，他赢得了南美洲历史上最伟大的胜利之一。
+                    </p>
+                  </div>
+
+                  <h3>圣马丁</h3>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+/* 弹性盒子 */
+
+.baiyechuang {
+    margin: 0 auto;
+    position: relative;
+    margin: 40px auto;
+    padding: 0;
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+    
+}
+
+.baiyechuang ul {
+    margin: 0;
+    padding: 0;
+    width: 2000px;
+}
+
+.baiyechuang li {
+    display: block;
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border-left: 1px solid #aaa;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.4);
+    transition: all .9s;
+}
+
+.baiyechuang ul:hover li {
+    transition: .9s;
+    width: 45px;
+}
+
+.baiyechuang ul li:hover {
+    width: 820px;
+}
+
+.starpeople-imgdiv {
+    overflow: hidden;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid rgb(187, 205, 197);
+    margin: 0 auto;
+    position: relative;
+    width: 800px;
+    height: 500px;
+}
+
+.starpeople-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 500px;
+    background: rgba(187, 205, 197, 0.123);
+    color: #272727;
+    opacity: 0;
+}
+
+.starpeople-imgdiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.starpeople-mask h3 {
+    margin-top: 0;
+    position: absolute;
+    font-size: 60px;
+    left: 50px;
+    top: 50px;
+    text-align: center;
+}
+
+.starpeople-mask:hover {
+    opacity: 1;
+}
+.lastbyc{
+    float: right;
+}
+
+
+.starpeople-mask .titile-t1 {
+    margin-top: 0;
+    position: absolute;
+    font-size: 40px;
+    left: 30px;
+    top: 0px;
+    text-align: center;
+}
+
+.starpeople-mask .titile-t2 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 30px;
+    right: 30px;
+    top: 50px;
+    text-align: center;
+}
+
+.starpeople-mask .mine-introduct .titile-t3 {
+    margin-top: 0;
+    color: rgb(227, 255, 242);
+    font-size: 20px;
+    text-align: center;
+}
+
+.starpeople-mask .mine-introduct {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+}

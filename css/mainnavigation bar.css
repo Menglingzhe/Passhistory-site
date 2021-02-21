@@ -1,0 +1,440 @@
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+  height: 100%;
+}
+
+
+
+.tt-bar {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: rgb(36, 36, 36);
+  color: #000000;
+  padding: 0% 15px 0%;
+  top: 0;
+  position: fixed;
+}
+
+.lgpic {
+  z-index: 101;
+  position: absolute;
+  left: 13%;
+  top: 23%;
+  width: 10%;
+}
+
+.menu-pic1 {
+  width: 100%;
+}
+
+.main-loc {
+  color: #7f7f7f;
+}
+
+/*一下为活动汉堡菜单键*/
+
+.menu-include {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: rgb(255, 0, 0);
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+
+.ham8 .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+
+.ham8 .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 400ms, stroke-dashoffset 400ms;
+}
+
+.ham8.active .middle {
+  transform: rotate(90deg);
+}
+
+.ham8.active .top {
+  stroke-dashoffset: -64px;
+}
+
+.ham8.active .bottom {
+  stroke-dashoffset: -64px;
+}
+
+/*汉堡菜单键结束*/
+
+/*一下为回到顶部按钮*/
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgb(188, 205, 197) url(../img/页面图标/黑箭头.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+  /* 如果用户继续向下滚动,这个按钮的透明度会变得更低 */
+  opacity: .5;
+}
+
+.cd-top:hover {
+  background-color: rgb(188, 205, 197);
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+/*顶部按钮结束*/
+
+/*顶部搜索框*/
+/*设定搜索框chorme-默认样式*/
+
+
+.container {
+  caret-color: rgb(187, 205, 197);
+  color:rgb(187, 205, 197);
+  position: absolute;
+  margin: 0;
+  margin-top: 1px;
+  top: 0px;
+  right: 18%;
+  bottom: 0;
+  width: 300px;
+  height: 70%;
+}
+
+.container .search {
+  position: absolute;
+  margin: 0 auto;
+  margin-right: 0%;
+  margin-top: 1%;
+  top: 0;
+  right: 0%;
+  bottom: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  background: crimson;
+  border-radius: 50%;
+  transition: all .3s;
+  z-index: 4;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.4);
+}
+
+.container .search:hover {
+  cursor: pointer;
+}
+
+.container .search::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 21px;
+  right: 0;
+  bottom: 0;
+  left: 21px;
+  width: 10px;
+  height: 2px;
+  background: rgb(187, 205, 197);
+  transform: rotate(45deg);
+  transition: all .5s;
+}
+
+.container .search::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: -5px;
+  right: 0;
+  bottom: 0;
+  left: -1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgb(187, 205, 197);
+  transition: all .5s;
+}
+
+.container input {
+  font-family: 'Inconsolata', monospace;
+  position: absolute;
+  margin: auto;
+  margin-right: 0%;
+  margin-top: 2%;
+  top: 3px;
+  right: 0;
+  bottom: 0;
+  left: 227px;
+  width: 20px;
+  height: 45px;
+  outline: none;
+  border: none;
+  background: crimson;
+  color: rgb(187, 205, 197);
+  text-shadow: 0 0 10px rgba(220, 20, 60, 0);
+  padding: 0;
+  padding-left: 27px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px 0 crimson, 0 10px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: all .5s;
+  opacity: 0;
+  z-index: 5;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+
+.container input:hover {
+  cursor: pointer;
+}
+
+.container input:focus {
+  width: 230px;
+  height: 30px;
+  left: 250px;
+  opacity: 1;
+  cursor: text;
+}
+
+.container input:focus~.search {
+  right: 0px;
+  background: crimson;
+  z-index: 6;
+}
+
+.container input:focus~.search::before {
+  top: 0;
+  left: 0;
+  width: 25px;
+}
+
+.container input:focus~.search::after {
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  border: none;
+  background: rgb(187, 205, 197);
+  border-radius: 0%;
+  transform: rotate(-45deg);
+}
+
+.container input::placeholder {
+  color: rgb(253, 238, 233);
+  opacity: 0.5;
+  font-weight: bolder;
+}
+
+/*搜索框结束*/
+
+.bar-signin-button {
+  color: rgb(187, 205, 197);
+  font-size: 13px;
+  padding: 3px 7px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  position: absolute;
+  right: 11%;
+  top: 23%;
+  background-color: rgb(36, 36, 36);
+  width: 68px;
+  height: 20px;
+}
+
+.bar-signin-button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(187, 205, 197);
+}
+
+.bar-register-button {
+  color: rgb(187, 205, 197);
+  font-size: 13px;
+  padding: 3px 7px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  position: absolute;
+  right: 4%;
+  top: 23%;
+  background-color: rgb(36, 36, 36);
+  width: 68px;
+  height: 20px;
+}
+
+.bar-register-button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(187, 205, 197);
+}
+
+.sign-in-bt-img {
+  position: absolute;
+  top: 5px;
+}
+
+.fenyebiao {
+  z-index: 1;
+  position: absolute;
+  right: 158px;
+  margin: 0;
+  top: 18px;
+  background-color: crimson;
+  width: 2px;
+  height: 20px;
+}
+
+nav {
+  margin-left: 25%;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  z-index: 100;
+  width: 600px;
+  padding-bottom: 0px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1em;
+}
+
+nav a {
+  padding-left: 14%;
+  position: relative;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(187, 205, 197);
+  transition: color .3s ease;
+}
+
+nav a::after {
+  margin-top: 5px;
+  --scale: 0;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 2px;
+  background: gold;
+  -webkit-transform: scaleX(var(--scale));
+  transform: scaleX(var(--scale));
+  -webkit-transform-origin: var(--x) 50%;
+  transform-origin: var(--x) 50%;
+  transition: -webkit-transform 0.3s cubic-bezier(0.535, 0.05, 0.355, 1);
+  transition: transform 0.3s cubic-bezier(0.535, 0.05, 0.355, 1);
+  transition: transform 0.3s cubic-bezier(0.535, 0.05, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.535, 0.05, 0.355, 1);
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav a:hover::after {
+  --scale: .8;
+}
+
+/*已登录*/
+
+.registed-div {
+  width: 220px;
+  height: 60px;
+  float: right;
+  margin-right: 30px;
+}
+
+.registed-div img {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  float: left;
+}
+
+.registed-div p {
+  color: rgb(187, 205, 197);
+}
+
+.registed-div a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+

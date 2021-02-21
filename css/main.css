@@ -1,0 +1,859 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.main-bgc {
+    width: 100%;
+    height: 5000px;
+    background-image: url(../img/页面图标/水墨长.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+.main-hole-bric {
+    width: 1300px;
+    height: 4600px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0 auto;
+}
+
+/*banner的样式*/
+
+.welcome-top {
+    margin-left: 80px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.box {
+    box-shadow: 0 12px 16px 10px rgba(36, 36, 36, 0.212), 0 17px 50px 0 rgba(36, 36, 36, 0.082);
+    margin: 25px 0px 25px 25px;
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.box ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box a {
+    text-decoration: none;
+    color: black;
+}
+
+.box-1 ul li {
+    width: 800px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box-1 ul li img {
+    display: block;
+    width: 800px;
+    height: 450px;
+}
+
+.box-1 ul li h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 650px;
+    background: rgba(125, 125, 120, 0.705);
+    text-indent: 1em;
+    padding-right: 500px;
+    font-size: 25px;
+    line-height: 60px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    color: ghostwhite;
+    margin-bottom: 0%;
+}
+
+.box-2 {
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+}
+
+.box-2 ul li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    text-indent: 100px;
+    cursor: pointer;
+}
+
+.box-2 ul .on {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.box-3 span {
+    position: absolute;
+    color: rgb(187, 205, 197);
+    border-radius: 4px;
+    background: rgba(125, 125, 120, 0);
+    width: 50px;
+    height: 80px;
+    top: 50%;
+    font-family: "宋体";
+    line-height: 80px;
+    font-size: 60px;
+    margin-top: -40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box-3 .prev {
+    left: 0px;
+}
+
+.box-3 .next {
+    right: 0px;
+}
+
+.box-3 span::selection {
+    background: transparent;
+}
+
+.box-3 span:hover {
+    color: rgb(255, 255, 255);
+    background: rgba(125, 125, 120, .8);
+}
+
+/*banner结束*/
+
+.banner-set {
+    margin: 0 auto;
+    border: 3px solid rgb(187, 205, 197);
+    width: 1275px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.Attached-pic {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    padding: 0px;
+    border: 3px solid rgb(187, 205, 197);
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    transition: 0.3s;
+}
+
+.Attached-pic:hover {
+    cursor: pointer;
+    border: 2px solid rgb(187, 205, 197);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    width: 410px;
+    height: 205px;
+}
+
+.Attached-pic h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 300px;
+    background: rgba(187, 205, 197, 0.623);
+    text-indent: 2em;
+    padding-right: 500px;
+    font-size: 15px;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bolder;
+    color: rgba(36, 36, 36);
+    margin-bottom: 0%;
+}
+
+.Attached-pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-set {
+    margin: 0 auto;
+    border: 3px solid rgb(187, 205, 197);
+    width: 1275px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.main-tt-II {
+    margin-top: 30px;
+    padding-top: 60px;
+    margin-left: 20px;
+}
+
+.main-tt-II .tuoyuan {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 20px;
+}
+
+.main-tt-II .tt-png {
+    width: 150px;
+}
+
+.ph-hotpoint-set {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 1275px;
+    height: 400px;
+}
+
+.ph-hotpoint-img {
+    margin-top: 0px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+    padding: 0px;
+    border: 3px solid rgb(187, 205, 197);
+    width: 500px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    transition: 0.5s;
+}
+
+.ph-hotpoint-img:hover {
+    cursor: pointer;
+    border: 2px solid rgb(187, 205, 197);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    width: 505px;
+    height: 455px;
+}
+
+.ph-hotpoint-img h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 350px;
+    background: rgba(187, 205, 197, 0.623);
+    text-indent: 2em;
+    padding-right: 200px;
+    font-size: 15px;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bolder;
+    color: rgba(36, 36, 36);
+    margin-bottom: 0%;
+}
+
+.ph-hotpoint-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ph-hotpoint-right {
+    margin-right: 25px;
+    margin-bottom: 10px;
+    padding: 0px;
+    width: 700px;
+    height: 405px;
+    position: relative;
+    float: right;
+}
+
+.ph-hotpoint-right hr {
+    border: none;
+    border-top: 1px dashed #555555;
+}
+
+.ph-hotpoint-list-top {
+    width: 700px;
+    background-color: rgba(255, 0, 0, 0);
+    height: 185px;
+    padding-bottom: 10px;
+    margin: 0px 0px 10px 0px;
+    transition: 0.3s;
+}
+
+.ph-hotpoint-list {
+    width: 700px;
+    background-color: rgba(255, 0, 0, 0);
+    height: 185px;
+    padding-bottom: 10px;
+    margin: 20px 0px 10px 0px;
+    transition: 0.3s;
+}
+
+.ph-hotpoint-first {
+    float: left;
+    width: 30%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.ph-hotpoint-first img {
+    margin: 0 10px 0 10px;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.ph-hotpoint-first-cct {
+    float: left;
+    margin: 0;
+    width: 65%;
+    height: 100%
+}
+
+.ph-hotpoint-first-cct h2 {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.ph-hotpoint-first-cct a {
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
+.ph-hotpoint-first-cct a:hover {
+    color: crimson;
+}
+
+.ph-hotpoint-first-cct p {
+    margin-top: 0;
+}
+
+.ph-hotpoint-first-cct span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(187, 205, 197)
+}
+
+.ph-hotpoint-first-cct img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    bottom: 200px;
+}
+
+.ph-hotpoint-list ul li {
+    background-color: rgba(250, 235, 230, 0.89);
+    border: 3px solid rgb(187, 205, 197);
+    list-style-type: "\1F30B";
+    color: #3f3f3f;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: -3px;
+    transition: 0.3s;
+}
+
+.ph-hotpoint-list ul {
+    padding-left: 20px;
+}
+
+.ph-hotpoint-list ul li span {
+    position: absolute;
+    right: 10px;
+    color: rgb(187, 205, 197);
+}
+
+.ph-hotpoint-list ul li:hover {
+    background-color: rgba(250, 235, 230);
+    cursor: pointer;
+    width: 650px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/*瀚海影苑*/
+
+.hhyy-div {
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 1200px;
+    height: 800px;
+}
+
+.blocks {
+    margin: 0 auto;
+    margin-left: 10px;
+    max-width: 1200px;
+    max-height: 500px;
+    padding: 0 auto;
+}
+
+.blocks li {
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: default;
+    float: left;
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: center;
+    transition: .3s cubic-bezier(.3, 0, 0, 1.3);
+    width: 480px;
+    height: 300px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.blocks li img {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    width: 480px;
+    height: 300px
+}
+
+.blocks li:hover {
+    transform: scale(.7);
+    z-index: 10;
+}
+
+.blocks li div {
+    border: 1px solid rgb(187, 205, 197);
+    height: 300px;
+    width: 480px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    border-radius: 4px;
+    transition: .3s cubic-bezier(0.5, 0, 0, 1.37);
+}
+
+.blocks li div span {
+    font-size: 12px;
+    font-weight: normal;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.blocks li:hover div {
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(2);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .4);
+}
+
+.mh-hole-div {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+}
+
+.mh-province-div {
+    border: 10px solid rgba(187, 205, 197, 0.418);
+    border-radius: 20px;
+    margin: 30px 0px 0px 100px;
+    padding-top: 0px;
+    float: left;
+    position: absolute;
+    width: 300px;
+    height: 450px;
+}
+
+.mh-province-div img {
+    margin: 0 auto;
+    margin-left: 0px;
+    padding: 0px 10px 10px 10px;
+    width: 270px;
+    height: 430px;
+    transition: 0.3s;
+}
+
+.mh-province-div img:hover {
+    width: 280px;
+    height: 440px;
+}
+
+.mh-province-div p {
+    position: absolute;
+    bottom: -20px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.mh-province-div a {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+}
+
+.mh-province-div a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.ConDiv {
+    background-image: url(../img/页面图标/古风纸张.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    margin: 0;
+    float: right;
+    position: absolute;
+    right: 50px;
+    width: 750px;
+    height: 500px;
+}
+
+.ConDiv img {
+    float: right;
+    position: absolute;
+    top: 60px;
+    right: 130px;
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    bottom: 1000px;
+    left: 0;
+    text-align: center;
+    color: #999;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.footer a {
+    color: #666;
+    text-decoration: underline;
+}
+
+.time-line {
+    width: 920px;
+    height: 300px;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    padding-left: 50px;
+}
+
+/*左右按钮*/
+
+.time-line .left-btn, .time-line .right-btn {
+    margin: 0;
+    padding: 5px 0;
+    border-radius: 15px 0px 0px 15px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.time-line .left-btn {
+    border-radius: 15px 0px 0px 15px;
+    left: 10px;
+    top: 43%;
+}
+
+.time-line .left-btn img, .time-line .right-btn img {
+    width: 100%;
+}
+
+.time-line .right-btn {
+    border-radius: 0px 15px 15px 0px;
+    right: 80px;
+    top: 43%;
+}
+
+.time-line .right-btn:hover, .time-line .left-btn:hover {
+    background-color: rgba(187, 205, 197, 0.363);
+}
+
+.time-line .time-box {
+    border-radius: 10%;
+    width: 800px;
+    height: 300px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.time-line .time-box ul {
+    padding-top: 22px;
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+}
+
+/*中线*/
+
+.time-line .time-box ul:after {
+    content: "";
+    background: rgb(187, 205, 197);
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+
+/*方元素*/
+
+.time-line .time-box li {
+    text-align: center;
+    margin: 0;
+    width: 200px;
+    height: 100px;
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border: 1px solid #46464634;
+    position: relative;
+    cursor: pointer;
+}
+
+.time-line .time-box li a {
+    text-decoration: none;
+    color: black;
+}
+
+.time-line .time-box li a:hover {
+    color: rgba(255, 0, 0, 0.466);
+}
+
+/*下方元素*/
+
+.time-line .time-box li:nth-child(2n) {
+    margin-top: 160px;
+}
+
+.time-line .time-box li:before {
+    content: "";
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 25% 25% 25% 0%;
+    background-color: rgba(221, 191, 143, 0.205);
+    bottom: -9px;
+    transform: rotate(-45deg);
+    left: 50%;
+    margin-left: -8px;
+}
+
+/*小圆点*/
+
+.time-line .time-box li:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.219);
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    bottom: 0;
+    bottom: -40px;
+    z-index: 1;
+}
+
+/*下方元素点*/
+
+.time-line .time-box li:nth-child(2n):before {
+    bottom: auto;
+    top: -10px;
+    border-radius: 25%;
+    background-color: rgba(222, 197, 148, 0.205);
+    transform: rotate(-225deg);
+}
+
+.time-line .time-box li:nth-child(2n):after {
+    bottom: auto;
+    background-color: rgba(255, 255, 255, 0.212);
+    top: -40px;
+}
+
+.time-line .time-box li:hover {
+    background-color: rgba(187, 205, 197, 0.411);
+    color: rgba(255, 0, 0, 0.527);
+    border-color: rgb(187, 205, 197);
+}
+
+/*变色*/
+
+.time-line .time-box li:hover:before {
+    border-color: rgb(187, 205, 197);
+}
+
+.time-line .time-box li:hover:after, :after {
+    background: url(../img/页面图标/历页标.png) no-repeat;
+}
+
+.time-bgc {
+    background-image: url(../img/页面图标/长纸卷\ .png);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 0 100px;
+    width: 900px;
+    height: 330px;
+    margin-left: 100px;
+    padding-top: 10PX;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
+/*手风琴效果*/
+.shoufengqin {
+    margin: 40 auto;
+    display: flex;
+    width: 1000px;
+    padding: 0;
+    margin-left: 150px;
+    box-sizing: border-box;
+    height: 500px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  .shoufengqin-box {
+    border-left: 3px solid #aaa;
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  
+    transition: all .9s;
+  }
+  
+  .shoufengqin-box>.starpeople-imgdiv {
+    width: 100%;
+    height: 500px;
+ 
+    object-fit: cover;
+    transition: .5s;
+  }
+  
+  .shoufengqin-box:hover {
+    flex: 1 1 80%;
+  }  
+  .starpeople-imgdiv {
+    overflow: hidden;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid rgb(187, 205, 197);
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .starpeople-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 830px;
+    height: 500px;
+    background: rgba(187, 205, 197, 0.123);
+    color: #272727;
+    opacity: 0;
+  }
+  
+  .starpeople-imgdiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .starpeople-mask h3 {
+    margin-top: 0;
+    position: absolute;
+    font-size: 60px;
+    left: 50px;
+    top: 50px;
+    text-align: center;
+  }
+  
+  .starpeople-mask:hover {
+    opacity: 1;
+  }
+  
+  .starpeople-mask .titile-t1 {
+    margin-top: 0;
+    position: absolute;
+    font-size: 40px;
+    left: 30px;
+    top: 0px;
+    text-align: center;
+  }
+  
+  .starpeople-mask .titile-t2 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 30px;
+    right: 30px;
+    top: 50px;
+    text-align: center;
+  }
+  
+  .starpeople-mask .mine-introduct .titile-t3 {
+    margin-top: 0;
+    color: rgb(227, 255, 242);
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .starpeople-mask .mine-introduct {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+  }
+
+.gengduo {
+    float: right;
+    right: 100px;
+}
+
+

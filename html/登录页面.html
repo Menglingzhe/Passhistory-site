@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../img/页面图标/页标.icon.ico" />
+  <link rel="stylesheet" href="../css/登陆页面.css">
+  <link rel="stylesheet" href="../css/mainnavigation bar.css">
+  <title>passhistory登录</title>
+</head>
+
+<body>
+
+  <div class="signin-bgdiv">
+
+    <div class="tt-bar">
+      <!-- 导航栏 -->
+      <div class="lgpic">
+        <a href="../html/main-未注册.html"><img src="../img/页面图标/跃历 全红.png" alt="passhistorylogo" class="menu-pic1"></a>
+      </div>
+      <!-- 搜索框 -->
+      <div class="container">
+        <input type="text" placeholder="搜索文章...">
+        <div class="search"></div>
+      </div>
+
+
+
+      <nav>
+        <a href="../html/main-未注册.html">今日推荐</a>
+        <a href="../html/main-未注册.html#hotpoint">跃历热点</a>
+        <a href="../html/main-未注册.html#hispicsee">史话图鉴</a>
+        <a href="../html/main-未注册.html#starpeople">烁星人物</a>
+        <a href="../html/main-未注册.html#maphistory">地分国史</a>
+        <a href="../html/main-未注册.html#seavideo">瀚海剧场</a>
+        <script>
+          document.querySelectorAll('a').forEach(elem => {
+            elem.onmouseenter =
+              elem.onmouseleave = e => {
+                const tolerance = 5;
+                const left = 0;
+                const right = elem.clientWidth;
+                let x = e.pageX - elem.offsetLeft;
+                if (x - tolerance < left) x = left;
+                if (x + tolerance > right) x = right;
+                elem.style.setProperty('--x', `${x}px`);
+              };
+          });
+        </script>
+      </nav>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="signin-hole">
+      <img src="../img/页面图标/跃历登录.png" alt="passhistorylogo" class="sign-logo" >
+      <form class="signin-form" action="../html/main-未注册.html" id="signform">
+        <input type="text" name="username" placeholder="账号" class="sign-textfield" id="username" onBlur="signin()">
+        <span id="usernames"></span>
+        <br>
+        <br>
+        <input type="password" name="psw" placeholder="密码" class="sign-textfield" id="psw" onBlur="signin()">
+        <span id="psws"></span>
+        <br><br>
+        <input type="button" value="登录" class="sign-ininputbutton" onClick="check2()">
+        <br><br><br><br><br><br>
+      </form>
+      <script type="text/javaScript" src="../js/registercheck.js"></script>
+    </div>
+    <footer class="buttom-side">
+      <p>本站作品均为网上普遍流行的作品，为便于大家科研、教学、学习等用途，本站将一些学术价值高的古籍或近代作品搜集整理，以方便大家使用，</p>
+      <p>本站不可能一一鉴别其是否为公共版权或其版权归属，如果您认为本站某部作品侵犯了您的版权，本站将表示非常抱歉！请您马上联系本站，本站一经核实，立即删除。</p>
+    </footer>
+
+
+  </div>
+
+
+
+
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="../img/页面图标/页标.icon.ico" />
+  <!-- 导航栏 -->
+  <link rel="stylesheet" href="../css/mainnavigation bar.css">
+  <!-- 主体样式 -->
+  <link rel="stylesheet" href="../css/main.css">
+  <!-- 史迹图鉴板块 -->
+  <link rel="stylesheet" href="../css/3Dtrans.css">
+  <!-- 回到顶部js -->
+  <script type="text/javascript" src="../js/回顶/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/回顶/script.js"></script>
+
+  <title>passhistory飞跃历史</title>
+</head>
+
+<body>
+
+
+
+  <div class="tt-bar">
+    <!-- 导航栏 -->
+    <div class="lgpic">
+      <a href="../html/main-未注册.html#banner-tt"><img src="../img/页面图标/跃历 全红.png" alt="passhistorylogo"
+          class="menu-pic1"></a>
+    </div>
+    <!-- 搜索框 -->
+    <div class="container">
+      <input type="text" placeholder="搜索本站文章...">
+      <div class="search"></div>
+    </div>
+    <a href="../html/登录页面.html">
+      <div class="bar-signin-button"><img src="../img/页面图标/登录标志.png" class="sign-in-bt-img">&nbsp&nbsp&nbsp&nbsp&nbsp登录
+      </div>
+    </a>
+    <div class="fenyebiao"></div>
+    <a href="../html/注册.html">
+      <div class="bar-register-button"><img src="../img/页面图标/注册标识.png"
+          class="sign-in-bt-img">&nbsp&nbsp&nbsp&nbsp&nbsp注册</div>
+    </a>
+
+    <!--回到顶部按钮-->
+    <a href="#" class="cd-top">g</a>
+    <nav>
+      <a href="../html/main-未注册.html#hotpoint">跃历热点</a>
+      <a href="../html/main-未注册.html#hispicsee">史话图鉴</a>
+      <a href="../html/main-未注册.html#time-axis">时间地图</a>
+      <a href="../html/main-未注册.html#starpeople">烁星人物</a>
+      <a href="../html/main-未注册.html#maphistory">地分国史</a>
+      <a href="../html/main-未注册.html#seavideo">瀚海剧场</a>
+      <script>
+        document.querySelectorAll('a').forEach(elem => {
+          elem.onmouseenter =
+            elem.onmouseleave = e => {
+              const tolerance = 5;
+              const left = 0;
+              const right = elem.clientWidth;
+              let x = e.pageX - elem.offsetLeft;
+              if (x - tolerance < left) x = left;
+              if (x + tolerance > right) x = right;
+              elem.style.setProperty('--x', `${x}px`);
+            };
+        });
+      </script>
+    </nav>
+
+
+
+
+
+
+
+  </div>
+
+
+
+  <div class="main-bgc" id="banner-tt">
+
+    <div class="main-hole-bric">
+      <!--banner组-->
+      <h1 class="welcome-top">Welcome to passhistory</h1>
+      <div class="banner-set" id="banner-set">
+        <!--主要原件，轮播图-->
+        <div class="box">
+          <script type="text/javascript" src="../js/banner.js"></script>
+          <div class="box-1">
+            <ul>
+              <li>
+                <a href="../html/article汉末三战.html"><img src="../img/汉末三战.jpg" alt="这里是第一场图片"></img></a>
+                <h2>汉末三战：孙曹刘谁与争锋？</h2>
+              </li>
+              <li>
+                <img src="../img/独联体成立.png" alt="独联体成立"></img>
+                <h2>苏联解体之后：独联体往事</h2>
+              </li>
+              <li>
+                <img src="../img/秦始皇的统一.jpg" alt="这里是第三张图片"></img>
+                <h2>始皇横扫天下，为何单单放过这个国家？</h2>
+              </li>
+              <li>
+                <img src="../img/罗马帝国油画.jpeg" alt="这里是第一场图片"></img>
+                <h2>希腊余晖：古罗马人为何文明？</h2>
+              </li>
+              <li>
+                <img src="../img/五德始终说与王朝.jpg" alt="这里是第一场图片"></img>
+                <h2>五德始终说与王朝</h2>
+              </li>
+            </ul>
+          </div>
+          <div class="box-2">
+            <ul>
+            </ul>
+          </div>
+          <div class="box-3">
+            <span class="prev">
+              < </span>
+                <span class="next"> > </span>
+          </div>
+        </div>
+
+        <!--右侧侧配图-->
+
+        <div class="Attached-pic">
+          <a href="../html/article东西德合并.html">
+            <img src="../img/东西德分开.jpg" alt="这里是第一场图片"></img>
+          </a>
+          <h2>东西德合并的前世今生</h2>
+        </div>
+        <div class="Attached-pic">
+          <a herf="">
+            <img src="../img/二里头遗址.jpg" alt="这里是第一场图片"></img></a>
+          <h2>二里头考古：中华文明的正源探索</h2>
+        </div>
+
+
+      </div>
+      <!--banner结束-->
+
+
+
+
+      <div class="main-tt-II" id="hotpoint">
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+        <img src="../img/页面图标/跃历热点.png" class="tt-png" />
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+      </div>
+      <hr>
+      <div class="ph-hotpoint-set">
+        <div class="ph-hotpoint-img">
+          <a href="../html/article东西德合并.html">
+            <img src="../img/东西德分开.jpg" alt="这里是第一场图片"></img>
+          </a>
+          <h2>东西德合并的前世今生</h2>
+        </div>
+        <!--右侧榜单-->
+        <div class="ph-hotpoint-right">
+          <div class="ph-hotpoint-list-top">
+            <div class="ph-hotpoint-first">
+              <a href="../html/article东西德合并.html">
+                <img src="../img/东西德分开.jpg" alt="这里是第一场图片"></img>
+              </a>
+            </div>
+            <div class="ph-hotpoint-first-cct">
+              <a href="../html/article东西德合并.html">
+                <h2>东西德合并的前世今生</h2>
+              </a><span>Hot：10000🔥</span>
+              <p>德国在近代发动的两次世界大战曾给世界带来巨大的破坏和灾难，战后为了彻底消除德国的威胁，英法美苏四国对德国和柏林进行了分区占领。 </p>
+              <img src="../img/页面图标/今日最热.png" alt="这里是第一场图片"></img>
+
+            </div>
+
+          </div>
+          <hr>
+          <div class="ph-hotpoint-list">
+            <ul>
+              <li>&nbsp&nbsp东欧剧变后，波兰这边经济独好！<span>Hot：1000🔥</span></li>
+              <li>&nbsp&nbsp中国能从黑龙江出海吗？<span>Hot：999&nbsp&nbsp🔥</span></li>
+              <li>&nbsp&nbsp朝鲜八道，裂变十八道<span>Hot：998&nbsp&nbsp🔥</span></li>
+              <li>&nbsp&nbsp古代的银票能伪造么<span>Hot：997&nbsp&nbsp🔥</span></li>
+              <li>&nbsp&nbsp法德世仇，不也和解了？<span>Hot：996&nbsp&nbsp🔥</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+      <div class="main-tt-II" id="hispicsee">
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+        <img src="../img/页面图标/史话图鉴.png" class="tt-png" />
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+      </div>
+      <hr>
+      <div class="picBox">
+        <div class="roll">
+          <div class="box-img"><img src="../img/参合战役.jpg" alt="" />
+          </div>
+          <a href="../html/article东西德合并.html">
+            <div class="box-content">
+              <p class="t1">燕魏參合陂之戰</p>
+              <p class="t2">北方统一前关键的一战</p>
+              <p class="t3"></p>
+              <p class="t4">中国五胡十六国时期后期，北魏军在参合陂（今中国山西省阳高县或内蒙古自治区凉城县）击败后燕军的一场战役，北魏及后燕建国后，因北魏势力逐渐强大，两国关系破裂。</p>
+            </div>
+          </a>
+        </div>
+        <div class="fl roll">
+          <div class="box-img"><img src="../img/埃及金字塔.jpg" alt="" /> </div>
+          <div class="box-content">
+            <p class="t1">金字塔的秘密</p>
+            <p class="t2">关于金字塔，你可能不知道的10件事</p>
+            <p class="t3"></p>
+            <p class="t4">金字塔是埃及最重要的历史古迹和最知名的旅游景点，金字塔充满了各种未解之谜，从古至今都吸引着世界各地的旅行者前往观看。</p>
+          </div>
+        </div>
+        <div class="fl roll">
+          <div class="box-img"><img src="../img/日本后三年之乱.jpg" alt="" /> </div>
+          <div class="box-content">
+            <p class="t1">日本后三年之乱</p>
+            <p class="t2">（ごさんねんのえき）</p>
+            <p class="t3"></p>
+            <p class="t4">是平安时代后期发生在陆奥・出羽（东北地方）的战役。前九年之役之后，成为东北地方霸者的俘囚清原氏灭亡，奥州藤原氏奠定在东北的基础，源氏确立其在东国的地位。</p>
+          </div>
+        </div>
+        <div class="fl roll">
+          <div class="box-img"><img src="../img/欧洲黑死病.jpg" alt="" /> </div>
+          <div class="box-content" onClick="interactive.openGreatBear('0', '')">
+            <p class="t1">黑死病：上帝之鞭</p>
+            <p class="t2">改变欧洲的社会结构的瘟疫</p>
+            <p class="t3"></p>
+            <p class="t4">约在14世纪40年代散布到整个欧洲，而“黑死病”之名是当时欧洲的称呼。这场瘟疫在全世界造成了大约7500万-2亿人死亡，是人类历史上致死人数最多的流行病之一</p>
+          </div>
+        </div>
+      </div>
+      <div class="picBox">
+        <div class="roll">
+          <div class="box-img"><img src="../img/参合战役.jpg" alt="" />
+          </div>
+          <a href="../html/article东西德合并.html">
+            <div class="box-content">
+              <p class="t1">燕魏參合陂之戰</p>
+              <p class="t2">北方统一前关键的一战</p>
+              <p class="t3"></p>
+              <p class="t4">中国五胡十六国时期后期，北魏军在参合陂（今中国山西省阳高县或内蒙古自治区凉城县）击败后燕军的一场战役，北魏及后燕建国后，因北魏势力逐渐强大，两国关系破裂。</p>
+            </div>
+          </a>
+        </div>
+        <div class="fl roll">
+          <div class="box-img"><img src="../img/埃及金字塔.jpg" alt="" /> </div>
+          <div class="box-content">
+            <p class="t1">金字塔的秘密</p>
+            <p class="t2">关于金字塔，你可能不知道的10件事</p>
+            <p class="t3"></p>
+            <p class="t4">金字塔是埃及最重要的历史古迹和最知名的旅游景点，金字塔充满了各种未解之谜，从古至今都吸引着世界各地的旅行者前往观看。</p>
+          </div>
+        </div>
+        <div class="fl roll">
+          <div class="box-img"><img src="../img/日本后三年之乱.jpg" alt="" /> </div>
+          <div class="box-content">
+            <p class="t1">日本后三年之乱</p>
+            <p class="t2">（ごさんねんのえき）</p>
+            <p class="t3"></p>
+            <p class="t4">是平安时代后期发生在陆奥・出羽（东北地方）的战役。前九年之役之后，成为东北地方霸者的俘囚清原氏灭亡，奥州藤原氏奠定在东北的基础，源氏确立其在东国的地位。</p>
+          </div>
+        </div>
+        <div class="fl roll">
+          <div class="box-img"><img src="../img/欧洲黑死病.jpg" alt="" /> </div>
+          <div class="box-content" onClick="interactive.openGreatBear('0', '')">
+            <p class="t1">黑死病：上帝之鞭</p>
+            <p class="t2">改变欧洲的社会结构的瘟疫</p>
+            <p class="t3"></p>
+            <p class="t4">约在14世纪40年代散布到整个欧洲，而“黑死病”之名是当时欧洲的称呼。这场瘟疫在全世界造成了大约7500万-2亿人死亡，是人类历史上致死人数最多的流行病之一</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="main-tt-II" id="time-axis">
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+        <img src="../img/页面图标/时间地图.png" class="tt-png" />
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+      </div>
+      <hr>
+
+      <div class="time-bgc">
+        <div class="time-line">
+          <div class="left-btn">
+            <img src="../img/页面图标/向左.png"></img>
+          </div>
+          <div class="right-btn">
+            <img src="../img/页面图标/向右.png"></img>
+          </div>
+          <div class="time-box">
+            <ul>
+
+              <li class="point">
+                <div class="point"></div>
+                <a href="../html/article东西德合并.html">
+                  <h3>BC2040-BC1009</h3>
+                  <p>远古：三皇五帝</p>
+                </a>
+              </li>
+              <li>
+                <div class="point"></div>
+                <a href="../html/article东西德合并.html">
+                  <h3>BC1009-BC800</h3>
+                  <p>上古：夏商西周</p>
+                </a>
+              </li>
+              <li>
+                <div class="point"></div>
+                <a href="../html/article东西德合并.html">
+                  <h3>BC800-BC21</h3>
+                  <p>春秋战国</p>
+                </a>
+              </li>
+              <li>
+                <div class="point"></div>
+                <a href="../html/article东西德合并.html">
+                  <h3>BC21-AC209</h3>
+                  <p>中华第一帝国：秦汉</p>
+                </a>
+              </li>
+              <li>
+                <div class="point"></div>
+                <a href="../html/article东西德合并.html">
+                  <h3>AC209-AC618</h3>
+                  <p>三国两晋南北朝</p>
+                </a>
+              </li>
+              <li>
+                <div class="point"></div>
+                <a href="../html/article东西德合并.html">
+                  <h3>AC618-AC1276</h3>
+                  <p>中华第二帝国：隋唐宋</p>
+                </a>
+              </li>
+              <li>
+                <div class="point"></div>
+                <a href="../html/article东西德合并.html">
+                  <h3>AC1277-AC1644</h3>
+                  <p>中华第三帝国：元明</p>
+                </a>
+              </li>
+              <li>
+                <div class="point"></div>
+                <a href="../html/article东西德合并.html">
+                  <h3>AC1645-AC1911</h3>
+                  <p>中华第四帝国：清</p>
+                </a>
+              </li>
+              <li>
+                <div class="point"></div>
+                <a href="../html/article东西德合并.html">
+                  <h3>AC1912——</h3>
+                  <p>近代</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+
+         
+          <script type="text/javascript">
+
+            $(function () {
+
+              var timeLength = $('.time-box li').length,
+                timeliWidth = $('.time-box li').outerWidth();
+
+              var index = 0;
+
+              $('.time-box ul').width(timeLength * timeliWidth);
+
+              function slideOne(i) {
+                var scrollVal = i * timeliWidth; //每次切换的数量
+                $('.time-box').stop().animate({
+                  scrollLeft: scrollVal
+                }, 300);
+              }
+
+              $('.right-btn').click(function () {
+                index = index >= (timeLength - 4) ? 0 : index + 1;
+                slideOne(index);
+              })
+
+              $('.left-btn').click(function () {
+                index = index <= 0 ? (timeLength - 4) : index - 1;
+                slideOne(index);
+              })
+
+            })
+
+          </script>
+        </div>
+      </div>
+
+
+      <div class="main-tt-II" id="starpeople">
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+        <img src="../img/页面图标/烁星人物.png" class="tt-png" />
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+      </div>
+      <hr>
+
+<!--手风琴效果2-->
+<div class="shoufengqin">
+	<div class="shoufengqin-box">
+		<div class="starpeople-imgdiv">
+			<img src="../img/毛主席与群众们.jpg">
+
+			<a href="../html/article汉末三战.html">
+			  <div class="starpeople-mask">
+				<p class="titile-t1">少年立志出乡关</p>
+				<p class="titile-t2">从韶山冲到天安门</p>
+				<div class="mine-introduct">
+				  <p class="titile-t3">1893年12月26日，偏僻的中国湖南省湘潭县韶山冲，一个殷实农家诞生了一个婴儿，当时并没有任何迹象表明，他将在未来改变中国、整个东方乃至世界的历史进程。
+				  </p>
+				</div>
+
+				<h3>毛泽东</h3>
+			  </div>
+			</a>
+		  </div>
+
+	</div>
+	<div class="shoufengqin-box">
+		<div class="starpeople-imgdiv">
+			<img src="../img/苏轼.jpg">
+
+			<a href="../html/article汉末三战.html">
+			  <div class="starpeople-mask">
+				<p class="titile-t1">“唐宋八大家”之一</p>
+				<p class="titile-t2">豪放派主要代表</p>
+				<div class="mine-introduct">
+				  <p class="titile-t3">其于人，见善称之，如恐不及；见不善斥之，如恐不尽；见义勇于敢为，而不顾其害。用此数困于世，然终不以为恨。</p>
+				</div>
+
+				<h3>苏轼</h3>
+			  </div>
+			</a>
+  
+		</div>
+	</div>
+	<div class="shoufengqin-box">
+		<div class="starpeople-imgdiv">
+			<img src="../img/高仙芝.jpg">
+
+			<a href="../html/article汉末三战.html">
+			  <div class="starpeople-mask">
+				<p class="titile-t1">右羽林大将军</p>
+				<p class="titile-t2">智取小勃律</p>
+				<div class="mine-introduct">
+				  <p class="titile-t3">中国这一位勇敢的将军，行军所经，惊险困难，比起欧洲名将，从汉尼拔，到拿破仑，到苏沃洛夫，他们之越阿尔卑斯山，真不知超过若干倍。</p>
+				</div>
+
+				<h3>高仙芝</h3>
+			  </div>
+			</a>
+		  </div>
+	
+	</div>
+	<div class="shoufengqin-box">
+		<div class="starpeople-imgdiv">
+			<img src="../img/矮子丕平.jpg">
+
+			<a href="../html/article汉末三战.html">
+			  <div class="starpeople-mask">
+				<p class="titile-t1">丕平献土</p>
+				<p class="titile-t2">加洛林王朝的创建者</p>
+				<div class="mine-introduct">
+				  <p class="titile-t3">将带领法兰克走上真正的帝国巅峰，他是神话和传奇，为真正掌权者的宫相丕平只差一步就可以从摄政摇身而为君王</p>
+				</div>
+
+				<h3>矮子丕平</h3>
+			  </div>
+			</a>
+		  </div>
+	
+	</div>
+	<div class="shoufengqin-box">
+		<div class="starpeople-imgdiv">
+			<img width="width:1000px" src="../img/圣马丁.jpg">
+
+			<a href="../html/article汉末三战.html">
+			  <div class="starpeople-mask">
+				<p class="titile-t1">阿根廷国父</p>
+				<p class="titile-t2">从帝国学院到义军领袖</p>
+				<div class="mine-introduct">
+				  <p class="titile-t3">如果摇篮是祖国的话，圣马丁是阿根廷人，因为他降生在乌拉圭河畔；如果荣誉是祖国的话，圣马丁是智利人，因为在迈普平原上，他赢得了南美洲历史上最伟大的胜利之一。
+				  </p>
+				</div>
+
+				<h3>圣马丁</h3>
+			  </div>
+			</a>
+		  </div>
+	
+	</div>
+	<div class="shoufengqin-box">
+		<div class="starpeople-imgdiv">
+			<img src="../img/孙传庭.jpg">
+
+			<a href="../html/article汉末三战.html">
+			  <div class="starpeople-mask">
+				<p class="titile-t1">大明督师七省兵部尚书</p>
+				<p class="titile-t2"></p>
+				<div class="mine-introduct">
+				  <p class="titile-t3">流贼蔓延中原，所恃以御贼者独秦兵耳。傅宗龙、孙传庭远近相望，倚以办贼。汪乔年、杨文岳奋力以当贼锋，而终于溃偾。此殆有天焉，非其才之不任也。传庭败死，贼遂入关，势以愈炽。存亡之际，所系岂不重哉。
+				  </p>
+				</div>
+
+				<h3>孙传庭</h3>
+			  </div>
+			</a>
+		  </div>
+	
+	</div>
+</div>
+
+      <div class="main-tt-II" id="maphistory">
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+        <img src="../img/页面图标/地分国史.png" class="tt-png" />
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+      </div>
+      <hr>
+
+      <div class="mh-hole-div">
+        <div class="mh-province-div">
+          <a href="../html/article汉末三战.html">
+            <img src="../img/晋.png" alt="晋"></img>
+          </a>
+          <p>今日地方史:
+            <a href="../html/article汉末三战.html"><span>山西</span></a>
+          </p>
+
+        </div>
+        <div class="ConDiv">
+          <img border="0" usemap="#Map" src="../img/页面图标/地图3.png" />
+          <map name="Map" id="Map">
+            <area id="beijing" alt="北京" href="../html/文章列表.html" coords="354,140,380,153" shape="rect">
+            <area id="shanghai" alt="上海" href="../html/文章列表.html" coords="434,246,462,259" shape="rect">
+            <area id="tianjin" alt="天津" href="../html/文章列表.html" coords="382,168,408,180" shape="rect">
+            <area id="chongqing" alt="重庆" href="../html/文章列表.html" coords="294,264,320,276" shape="rect">
+            <area id="hebei" alt="河北" href="../html/文章列表.html" coords="347,174,374,186" shape="rect">
+            <area id="shanxi" alt="山西" href="../html/文章列表.html" coords="322,186,348,198" shape="rect">
+            <area id="neimenggu" alt="内蒙古" href="../html/文章列表.html" coords="349,110,388,124" shape="rect">
+            <area id="liaoning" alt="辽宁" href="../html/文章列表.html" coords="406,128,432,140" shape="rect">
+            <area id="jilin" alt="吉林" href="../html/文章列表.html" coords="427,101,454,115" shape="rect">
+            <area id="heilongjiang" alt="黑龙江" href="../html/文章列表.html" coords="424,58,464,73" shape="rect">
+            <area id="jiangsu" alt="江苏" href="../html/文章列表.html" coords="404,224,417,250" shape="rect">
+            <area id="zhejiang" alt="浙江" href="../html/文章列表.html" coords="413,265,427,291" shape="rect">
+            <area id="anhui" alt="安徽" href="../html/文章列表.html" coords="382,236,395,263" shape="rect">
+            <area id="fujian" alt="福建" href="../html/文章列表.html" coords="399,300,413,327" shape="rect">
+            <area id="jiangxi" alt="江西" href="../html/文章列表.html" coords="371,286,385,313" shape="rect">
+            <area id="shandong" alt="山东" href="../html/文章列表.html" coords="373,196,399,208" shape="rect">
+            <area id="henan" alt="河南" href="../html/文章列表.html" coords="337,228,364,239" shape="rect">
+            <area id="hubei" alt="湖北" href="../html/文章列表.html" coords="329,258,356,271" shape="rect">
+            <area id="hunan" alt="湖南" href="../html/文章列表.html" coords="325,294,352,306" shape="rect">
+            <area id="guangdong" alt="广东" href="../html/文章列表.html" coords="356,343,382,355" shape="rect">
+            <area id="guangxi" alt="广西" href="../html/文章列表.html" coords="302,343,328,355" shape="rect">
+            <area id="hainan" alt="海南" href="../html/文章列表.html" coords="313,398,340,411" shape="rect">
+            <area id="sichuan" alt="四川" href="../html/文章列表.html" coords="239,265,265,277" shape="rect">
+            <area id="guizhou" alt="贵州" href="../html/文章列表.html" coords="283,311,308,324" shape="rect">
+            <area id="yunnan" alt="云南" href="../html/文章列表.html" coords="225,337,251,349" shape="rect">
+            <area id="shaanxi" alt="陕西" href="../html/文章列表.html" coords="303,224,316,251" shape="rect">
+            <area id="gansu" alt="甘肃" href="../html/文章列表.html" coords="179,156,205,168" shape="rect">
+            <area id="qinghai" alt="青海" href="../html/文章列表.html" coords="174,206,200,218" shape="rect">
+            <area id="ningxia" alt="宁夏" href="../html/文章列表.html" coords="277,188,290,212" shape="rect">
+            <area id="xinjiang" alt="新疆" href="../html/文章列表.html" coords="85,140,111,152" shape="rect">
+            <area id="xizang" alt="西藏" href="../html/文章列表.html" coords="87,249,113,261" shape="rect">
+            <area id="xianggang" alt="香港" href="../html/文章列表.html" coords="379,358,406,370" shape="rect">
+            <area id="aomen" alt="澳门" href="../html/文章列表.html" coords="349,371,375,383" shape="rect">
+            <area id="taiwan" alt="台湾" href="../html/文章列表.html" coords="434,322,448,348" shape="rect">
+          </map>
+        </div>
+      </div>
+
+      <div class="main-tt-II" id="seavideo">
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+        <img src="../img/页面图标/瀚海剧场.png" class="tt-png" />
+        <img src="../img/页面图标/水墨圆圈.png" class="tuoyuan" />
+      </div>
+      <hr>
+      <div class="hhyy-div">
+        <ul class="blocks">
+          <li>
+            <img src="../img/紫禁城的秘密.jpg" alt="这里是第一场图片"></img>
+            <h3>紫禁城的秘密</h3>
+            <div class="popup1">
+              <span>
+                <a href="../html/瀚海影院1.html">
+                  <img src="../img/紫禁城的秘密.jpg" alt="这里是第一场图片"></img>
+                </a>
+              </span>
+            </div>
+          </li>
+          <li>
+            <img src="../img/苏东坡.jpg" alt="这里是第一场图片"></img>
+            <h3>苏东坡</h3>
+            <div class="popup2">
+              <span>
+                <a href="../html/瀚海影院1.html">
+                  <img src="../img/苏东坡.jpg" alt="这里是第一场图片"></img>
+                </a>
+              </span>
+            </div>
+          </li>
+          <li>
+            <img src="../img/如果国宝会说话.jpg" alt="这里是第一场图片"></img>
+            <h3>如果国宝会说话</h3>
+            <div class="popup1">
+              <span>
+                <img src="../img/如果国宝会说话.jpg" alt="这里是第一场图片"></img>
+              </span>
+            </div>
+          </li>
+          <li>
+            <img src="../img/汉匈全面战争.jpg" alt="这里是第一场图片"></img>
+            <h3>汉匈全面战争</h3>
+            <div class="popup1">
+              <span>
+                <img src="../img/汉匈全面战争.jpg" alt="这里是第一场图片"></img>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer">
+        <p>跃历 - Pass History</p>
+        <p>Designed By MIS1902 & <a href="../other/校党学字〔2020〕2号 关于在疫情防控常态化形势下开展2020年学生暑期 “三下乡”社会实践活动的通知.pdf">喆喆飞翔</a>
+          2020</p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>

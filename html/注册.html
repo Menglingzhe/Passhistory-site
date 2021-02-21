@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="../img/页面图标/页标.icon.ico" />
+  <link rel="stylesheet" href="../css/注册页面.css">
+  <!-- 导航栏 -->
+  <link rel="stylesheet" href="../css/mainnavigation bar.css">
+  
+
+
+  <title>passhistory注册</title>
+</head>
+
+
+<body>
+
+
+
+  <div class="tt-bar">
+    <!-- 导航栏 -->
+    <div class="lgpic">
+      <a href="../html/main-未注册.html"><img src="../img/页面图标/跃历 全红.png" alt="passhistorylogo" class="menu-pic1"></a>
+    </div>
+    <!-- 搜索框 -->
+    <div class="container">
+      <input type="text" placeholder="搜索文章...">
+      <div class="search"></div>
+    </div>
+
+
+
+    <nav>
+      <a href="../html/main-未注册.html">今日推荐</a>
+      <a href="../html/main-未注册.html#hotpoint">跃历热点</a>
+      <a href="../html/main-未注册.html#hispicsee">史话图鉴</a>
+      <a href="../html/main-未注册.html#starpeople">烁星人物</a>
+      <a href="../html/main-未注册.html#maphistory">地分国史</a>
+      <a href="../html/main-未注册.html#seavideo">瀚海剧场</a>
+      <script>
+        document.querySelectorAll('a').forEach(elem => {
+          elem.onmouseenter =
+            elem.onmouseleave = e => {
+              const tolerance = 5;
+              const left = 0;
+              const right = elem.clientWidth;
+              let x = e.pageX - elem.offsetLeft;
+              if (x - tolerance < left) x = left;
+              if (x + tolerance > right) x = right;
+              elem.style.setProperty('--x', `${x}px`);
+            };
+        });
+      </script>
+    </nav>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="register-hole">
+    <div class="bkc-register">
+
+      <div class="personpicdiv" align="center">
+        <img src="../img/孟令哲.jpg" alt="还未上传" title="preview-img" id="personpic">
+
+
+
+
+        <div class="cter-signin-div">
+          <a class="cter-signin-a">选取画像</a>
+          <input type="file" accept="image/gif, image/jpeg" class="photobutton" id="touxiang">
+        </div>
+
+        <script>
+          var fileInput = document.querySelector('input[id=touxiang]'),
+            previewImg = document.querySelector('img[id=personpic]');
+          fileInput.addEventListener('change', function () {
+            var file = this.files[0];
+            var reader = new FileReader();
+            // 监听reader对象的的onload事件，当图片加载完成时，把base64编码賦值给预览图片
+            reader.addEventListener("load", function () {
+              previewImg.src = reader.result;
+            }, false);
+            // 调用reader.readAsDataURL()方法，把图片转成base64
+            reader.readAsDataURL(file);
+          }, false);
+        </script>
+
+      </div>
+
+      <form name="registerform" method="post" action="../html/main.html" onsubmit="return register()" id="registerform">
+        <table width="643" height="434" border="0" align="center" id="styleform">
+          <tbody>
+            <tr>
+              <th width="91" scope="row">账号：</th>
+              <td width="363"><input type="text" name="username" id="username" onBlur="register()"   placeholder="account"  class="register-textfild">
+                <span id="usernames"></span>	
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">姓名：</th>
+              <td><input type="text" name="name" maxlength="10" id="realname" onBlur="register()" placeholder="name" value="孟令哲"
+                  class="register-textfild"><span id="rnames"></span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">密码：</th>
+              <td><input type="password" name="password" id="psw" onBlur="register()" maxlength="12" placeholder="password" value="20001010mlz" class="register-textfild">
+                  <span id="psws"></span>
+                </td>
+            </tr>
+            <tr>
+              <th scope="row">密码确认：</th>
+              <td><input type="password" name="psdcheck" id="psw-enter" onBlur="register()" maxlength="12" placeholder="confirm" value="20001010mlz" class="register-textfild">
+                <span id="psws-enter"></span> 
+                </td>
+            </tr>
+            <tr>
+              <th scope="row">性别：</th>
+              <td><input type="radio" name="sex" value="man" onBlur="register()">
+                男 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="sex" value="woman" onBlur="register()">
+                女<span id="sex-check"></span> 
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">籍贯：</th>
+              <td>
+                <select id="province" onchange="selectprovince(this);" class="register-xueyuan" onBlur="register()" name="jiguan-name"></select>
+                <select id="city" class="register-xueyuan"></select><span id="jiguan"></span>
+                <script type="text/Javascript" src="../js/where.js"></script>
+              </td>
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">出生年月：</th>
+              <td><input type="date" name="bday" max="2021-01-02" min="1900-01-02" placeholder="请输入时间" id="date_info"
+                  class="register-xueyuan">
+                请输入1900-01-02--2021-01-01之间的日期</td>
+            </tr>
+            <tr>
+              <th scope="row">朝代喜好：</th>
+              <td><input type="checkbox" name="clove" value="ss" onBlur="register()">
+                夏商周
+                <input type="checkbox" name="clove" value="ff" onBlur="register()">
+                秦汉
+                <input type="checkbox" name="clove" value="fff" onBlur="register()">
+                三国两晋南北朝
+                <input type="checkbox" name="clove" value="fffff" onBlur="register()">
+                唐
+                <input type="checkbox" name="clove" value="ffff" onBlur="register()">
+                五代
+                <input type="checkbox" name="clove" value="ffffff" onBlur="register()">
+                宋
+                <input type="checkbox" name="clove" value="qq" onBlur="register()">
+                元
+                <input type="checkbox" name="clove" value="w" onBlur="register()">
+                明
+                <input type="checkbox" name="clove" value="wq" onBlur="register()">
+                清
+                <input type="checkbox" name="clove" value="r" onBlur="register()">
+                中华民国<span id="chaodailove"></span> 
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">学院：</th>
+              <td colspan="2">
+
+                <select name="dept" class="register-xueyuan" onBlur="register()">
+                  <option value="请选择院系">请选择院系</option>
+                  <option value="管院" >管理学院</option>
+                  <option value="材院">材料学院</option>
+                  <option value="汽院">汽车学院</option>
+                  <option value="交院">交通学院</option>
+                </select><span id="yuanxi"></span> 
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">专业班级：</th>
+              <td colspan="2"><input type="text" name="classes" placeholder="classes" value="信管1902班"
+                  class="register-textfild">
+
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">电话号码：</th>
+              <td colspan="2"><input type="text" id="phone" onBlur="register()" name="phonenumber" placeholder="phonenumber" value="13485311619"
+                  class="register-textfild"><span id="phones"></span> 
+
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">电子邮箱：</th>
+              <td colspan="2"><input type="text" id="email" onBlur="register()" name="account" maxlength="20" placeholder="email"
+                  value="335219950@qq.com" class="register-textfild"><span id="emails"></span>
+                </td>
+            </tr>
+            <tr>
+              <td colspan="3" scope="row" align="center">
+                <span>
+                  <input type="checkbox" name="agree" value="agree" checked="checked">
+                  我已同意<a href="../用户手册.html">passhistory用户条约 </a></span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" scope="row" align="center">
+                <span>
+
+                  <input type="button" value="立即注册" class="inputbutton" onClick="check()" >
+                  <button type="reset" onclick="alert('重置成功')" class="resetbutton">重置</button>
+
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      <script type="text/javaScript" src="../js/registercheck.js"></script>
+    </div>
+
+
+
+
+  </div>
+
+
+  </div>
+
+</body>
+
+</html>

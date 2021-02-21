@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../img/页面图标/页标.icon.ico" />
+  <link rel="stylesheet" href="../css/hh.css">
+  <!-- 导航栏 -->
+  <link rel="stylesheet" href="../css/mainnavigation bar.css">
+  <title>passhistory瀚海影院</title>
+</head>
+
+<body>
+
+
+  <div class="tt-bar">
+    <!-- 导航栏 -->
+    <div class="lgpic">
+      <a href="../html/main.html"><img src="../img/页面图标/跃历 全红.png" alt="passhistorylogo" class="menu-pic1"></a>
+    </div>
+    <!-- 搜索框 -->
+    <form action="https://www.baidu.com/s">
+      <div class="container">
+        
+        <input type="search" placeholder="搜索相关资料..."name="wd" autocomplete="off">
+    
+        <div class="search"></div>
+      </div>
+    </form>
+    <div class="registed-div">
+      <img src="../img/页面图标/喆喆头像.jpg" alt="这里是第一场图片"></img>
+      <p>欢迎跃过历史:<i>喆喆</i></p>
+    </div>
+
+
+
+    <nav>
+      <a href="../html/main.html">今日推荐</a>
+      <a href="../html/main.html#hotpoint">跃历热点</a>
+      <a href="../html/main.html#hispicsee">史话图鉴</a>
+      <a href="../html/main.html#starpeople">烁星人物</a>
+      <a href="../html/main.html#maphistory">地分国史</a>
+      <a href="../html/main.html#seavideo">瀚海剧场</a>
+      <script>
+        document.querySelectorAll('a').forEach(elem => {
+          elem.onmouseenter =
+            elem.onmouseleave = e => {
+              const tolerance = 5;
+              const left = 0;
+              const right = elem.clientWidth;
+              let x = e.pageX - elem.offsetLeft;
+              if (x - tolerance < left) x = left;
+              if (x + tolerance > right) x = right;
+              elem.style.setProperty('--x', `${x}px`);
+            };
+        });
+      </script>
+    </nav>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <p class="main-loc">位置&nbsp&nbsp&nbsppasshistory-->瀚海剧场</p>
+
+
+  <div class="hh-tt">
+    <h1>《苏东坡》</h1>
+  </div>
+  <div class="hh-video">
+    <video width="800" height="500" controls autoplay class="hh-vedioinner">
+      <source src="../video/15764766786f3ee7f21d43a170.mov_last.mp4" type="video/mp4">
+      <object data="../video/15764766786f3ee7f21d43a170.mov_last.mp4" width="320" height="240">
+        <embed width="800" height="600" src="movie.swf">
+      </object>
+    </video>
+  </div>
+</body>
+
+</html>
